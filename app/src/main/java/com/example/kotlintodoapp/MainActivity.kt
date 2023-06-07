@@ -10,9 +10,11 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavController
 import com.example.kotlintodoapp.ui.theme.KotlinTodoAppTheme
 
 class MainActivity : ComponentActivity() {
+    private lateinit var navController: NavController;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
